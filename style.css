@@ -25,7 +25,7 @@ body {
 
 
 #content {
-    animation: fadeInLate 6s;
+    animation: fadeInLate 7s;
 }
 
 #header {
@@ -44,7 +44,7 @@ body {
 }
 
 #video-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
