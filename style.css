@@ -2,12 +2,26 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Lucida Console", monospace;
+    /*font-family: "Lucida Console", monospace;*/
+    font-family: 'Fira Mono', monospace;
     letter-spacing: 1.5px;
     line-height: 1.5;
     color: white;
     background-color: black;
+    /*animation: glitch 1s linear;*/
 }
+
+/*@keyframes glitch {
+2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}*/
 
 
 #content {
