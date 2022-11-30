@@ -2,7 +2,29 @@ body {
     overflow-x: hidden;
     font-family: "Lucida Console", monospace;
     letter-spacing: 1.5px;
+    line-height: 1.5;
     color: white;
+    background-color: black;
+}
+
+
+#content {
+    animation: fadeInLate 6s;
+}
+
+#header {
+    animation: fadeIn 3s; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInLate {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 #video-container {
@@ -20,14 +42,34 @@ body {
 
 #name {
     font-size: 50px;
-    margin: 30px 0px 0px 70px;
+    margin: 0px 0px 0px 70px;
 }
 
-#hidden-img {
+#hidden-img-profile {
     display: none;
 }
 
-#hidden-text:hover ~ #hidden-img {
+#hidden-text-profile:hover ~ #hidden-img-profile {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#hidden-img-school {
+    display: none;
+}
+
+#hidden-text-school:hover ~ #hidden-img-school {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+#hidden-img-van {
+    display: none;
+}
+
+#hidden-text-van:hover ~ #hidden-img-van {
     display: block;
     position: absolute;
     z-index: 1;
@@ -35,9 +77,30 @@ body {
 
 .bio-container {
     font-size: 30px;
-    margin: 300px 0px 0px 70px;
+    margin: 100px 0px 0px 70px;
 }
 
 a {
     color: white;
+}
+
+mark {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 3%;
+    height: 1.1em;
+    line-height: 1.1;
+    display: inline-block;
+}
+
+#hobbies {
+    list-style: none;
+    font-size: 25px;
+}
+
+.hover-img {
+    margin-top: 20px; 
+    border-radius:2%; 
+    border: 1px solid white; 
 }
