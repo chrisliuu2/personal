@@ -8,20 +8,7 @@ body {
     line-height: 1.5;
     color: white;
     background-color: black;
-    /*animation: glitch 1s linear;*/
 }
-
-/*@keyframes glitch {
-2%,64%{
-    transform: translate(2px,0) skew(0deg);
-  }
-  4%,60%{
-    transform: translate(-2px,0) skew(0deg);
-  }
-  62%{
-    transform: translate(0,0) skew(5deg); 
-  }
-}*/
 
 
 #content {
@@ -30,6 +17,11 @@ body {
 
 #header {
     animation: fadeIn 3s; 
+}
+
+@keyframes fadeInNew {
+    0% { opacity: 0; }
+    100% { opacity: 0.5; }
 }
 
 @keyframes fadeIn {
@@ -53,7 +45,7 @@ body {
 
 .clock {
     font-size: 50px;
-    margin: 100px 0px 0px 70px;
+    margin: 75px 0px 0px 70px;
 }
 
 #name {
@@ -71,8 +63,25 @@ body {
     z-index: 1;
 }
 
+#hidden-text-profile {
+    /*transition: height 0.5s;*/
+    transition: 0.5s;
+}
+
+#hidden-text-profile:hover {
+    font-size: 28px;
+}
+
 #hidden-img-school {
     display: none;
+}
+
+#hidden-text-school {
+    transition: 0.5s;
+}
+
+#hidden-text-school:hover {
+    font-size: 28px;
 }
 
 #hidden-text-school:hover ~ #hidden-img-school {
@@ -91,9 +100,17 @@ body {
     z-index: 1;
 }
 
+#hidden-text-van {
+    transition: 0.5s;
+}
+
+#hidden-text-van:hover {
+    font-size: 28px;
+}
+
 .bio-container {
-    font-size: 30px;
-    margin: 100px 0px 0px 70px;
+    font-size: 25px;
+    margin: 50px 0px 0px 70px;
 }
 
 a {
@@ -111,12 +128,45 @@ mark {
 }
 
 #hobbies {
-    list-style: none;
-    font-size: 25px;
+    list-style: hiragana;
+    font-size: 20px;
 }
 
 .hover-img {
     margin-top: 20px; 
     border-radius:2%; 
     border: 1px solid white; 
+}
+
+table, tr, td {
+    font-size: 25px;
+    padding: 10px;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 3%;
+}
+
+#website {
+    transition: 0.5s;
+}
+
+#website:hover {
+    font-size: 28px;
+}
+
+#drake {
+    transition: 0.5s;
+}
+
+#drake:hover {
+    font-size: 28px;
+}
+
+#height {
+    transition: 0.5s;
+}
+
+#height:hover {
+    font-size: 28px;
 }

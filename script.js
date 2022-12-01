@@ -28,3 +28,11 @@ function displayTime () {
 }
 
 setInterval(displayTime, 10);
+
+var video = document.getElementById('background-video');
+
+document.onkeypress = function(e) {
+    if ( (e || window.event).keyCode === 118 /* enter key */ ) {
+        video.paused ? video.play() : video.pause();
+    }
+};
