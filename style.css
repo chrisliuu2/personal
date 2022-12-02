@@ -128,7 +128,7 @@ mark {
 }
 
 #hobbies {
-    list-style: hiragana;
+    list-style-type: "> ";
     font-size: 20px;
 }
 
