@@ -10,6 +10,7 @@ body {
     background-color: black;
     cursor: crosshair;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 
