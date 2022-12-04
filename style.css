@@ -9,6 +9,7 @@ body {
     color: white;
     background-color: black;
     cursor: crosshair;
+    scroll-behavior: smooth;
 }
 
 
@@ -70,6 +71,7 @@ body {
 }
 
 #hidden-text-profile:hover {
+    cursor: none;
     font-size: 28px;
 }
 
@@ -82,6 +84,7 @@ body {
 }
 
 #hidden-text-school:hover {
+    cursor: none;
     font-size: 28px;
 }
 
@@ -106,6 +109,7 @@ body {
 }
 
 #hidden-text-van:hover {
+    cursor: none;
     font-size: 28px;
 }
 
@@ -116,6 +120,10 @@ body {
 
 a {
     color: white;
+}
+
+a:hover {
+    color: midnightblue;
 }
 
 mark {
@@ -153,6 +161,7 @@ table, tr, td {
 }
 
 #website:hover {
+    cursor: none;
     font-size: 28px;
 }
 
@@ -161,6 +170,7 @@ table, tr, td {
 }
 
 #drake:hover {
+    cursor: none;
     font-size: 28px;
 }
 
@@ -169,5 +179,6 @@ table, tr, td {
 }
 
 #height:hover {
+    cursor: none;
     font-size: 28px;
 }
